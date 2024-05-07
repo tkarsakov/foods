@@ -1,6 +1,6 @@
 package model.constants;
 
-public enum Colour {
-    RED,
-    GREEN;
+public class Colour {
+    public static final String RED = "red";
+    public static final String GREEN = "green";
 }

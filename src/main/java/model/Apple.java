@@ -5,7 +5,7 @@ import java.util.Objects;
 
 import static model.constants.Discount.SIXTY;
 
-public class Apple extends Food implements Discountable{
+public class Apple extends Food implements Discountable {
 
     private String color;
 
@@ -17,6 +17,10 @@ public class Apple extends Food implements Discountable{
 
     @Override
     public BigDecimal getDiscount() {
-        if (this.color.equalsIgnoreCase("red")) return SIXTY.getBigDecimal(); else return BigDecimal.valueOf(0);
+        if (this.color.equalsIgnoreCase("red")) {
+            return SIXTY;
+        } else {
+            return BigDecimal.valueOf(0);
+        }
     }
 }

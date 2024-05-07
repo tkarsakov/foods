@@ -2,17 +2,7 @@ package model.constants;
 
 import java.math.BigDecimal;
 
-public enum Discount {
+public class Discount {
 
-    SIXTY(BigDecimal.valueOf(60));
-
-    private final BigDecimal discount;
-
-    Discount(BigDecimal discount) {
-        this.discount = discount;
-    }
-
-    public BigDecimal getBigDecimal() {
-        return this.discount;
-    }
+    public static final BigDecimal SIXTY = BigDecimal.valueOf(60);
 }
